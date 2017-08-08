@@ -1,0 +1,145 @@
+#myModal{
+  width: 650px;
+  height: 370px;
+  top: 10px;
+  left: 8px;
+  overflow: hidden;
+  /*border: 1px solid blue;*/
+  display: none;
+  border-radius: 3px;
+  position: absolute;
+  background: gray
+}
+#closeImg{
+  position: absolute;
+  z-index: 9999;
+  right: 20px;
+  top: 15px;
+  opacity: 0.5;
+}
+#closeImg:hover{
+  opacity: 1;
+}
+/*.k-contet{*/
+  /*position: static !important;*/
+/*}*/
+#listView {
+  margin-bottom: -1px;
+  height: 100%;
+  border: none;
+  /*overflow: auto;*/
+}
+.product {
+  float: left;
+  position: relative;
+  height: 170px;
+  padding: 3px;
+  border: 0px solid gray;
+  margin: 3px;
+}
+.info{
+  margin:5px 10px 10px;
+  font-size: .9em;color: rgb(0,0,0);
+}
+.info div{
+  overflow:hidden;
+  color: #5f5c5c;
+  font-size: 12px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.album-cover {
+  position: absolute;
+  height: 320px;
+}
+.album-contents {
+  position: absolute;
+  background: #2e2e2e;
+  color: #ffffff;
+  width: 650px;
+  height: 370px;
+}
+#wrap {
+  height: 370px;
+  position: relative;
+}
+
+#book {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+#book > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+#actions {
+  overflow: hidden;
+  margin: 0 auto 3em;
+  width: 650px;
+}
+#previous, #next {
+  text-decoration: none;
+  text-indent: -999em;
+  overflow: hidden;
+  display: block;
+  height: 110px;
+  width: 90px;
+  position: absolute;
+  top:30%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  opacity: .5;
+  left: 514px;
+}
+
+#previous:hover, #next:hover {
+  opacity: 1;
+}
+
+#previous {
+  left: 0;
+  background-image: url("../../pictures/left.png");
+  /*IE不兼容后缀为gif的图片*/
+}
+
+#next {
+  right: 0;
+  background-image: url("../../pictures/right.png");
+}
+
+.first-page #previous,
+.last-page #next {
+  display: none;
+}
+.current{
+  clip: auto;
+  opacity: 1;
+  display: list-item;
+}
+.others{
+  clip: auto;
+  opacity: 1;
+  display: none;
+}
+div.k-slider {
+  top: -55px;
+  width: 650px;
+  opacity: 0.5;
+
+}
+div.k-slider:hover{
+  opacity: 1;
+}
+div.k-window-content{
+  padding: 0px;
+}

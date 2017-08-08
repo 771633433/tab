@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tab_mould</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/myJs/bootstrap.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <link href="styles/kendo.common.min.css" rel="stylesheet">
+    <link href="styles/kendo.fiori.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="tabstrip">
+    <script type="text/x-kendo-template" id="javascriptTemplate">
+        <ul id="tabs">
+            # for (var i = 0; i < tab_data.length; i++) { #
+            <li>
+                #= tab_data[i].tabname #
+            </li>
+            # } #
+        </ul>
+        # for (var i = 0; i < tab_data.length; i++) { #
+        <div title="#= tab_data[i].src #" class="tabContent"></div>
+        # } #
+    </script>
+</div>
+</body>
+<link rel="stylesheet" href="styles/myCss/tab_mould.css">
+<script src="js/myJs/tab_mould.js"></script>
+</html>

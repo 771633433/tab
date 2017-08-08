@@ -1,0 +1,9 @@
+#tabstrip{
+  width:678px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
+.tabContent{
+  height:370px;
+  /*position: static !important;*/
+}
